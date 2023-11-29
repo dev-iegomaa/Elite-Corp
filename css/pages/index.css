@@ -1,0 +1,531 @@
+/* Start Slider */
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: rgba(0 0 0 / 55%);
+    background-blend-mode: overlay;
+}
+
+#slider figure:first-of-type {
+    background-image: url('../../images/slider/slider1.jpg');
+    background-position: 0% 15%;
+}
+
+#slider figure:nth-of-type(2) {
+    background-image: url('../../images/slider/slider2.jpeg');
+    background-position: 70% 50%;
+}
+
+#slider figure:last-of-type {
+    background-image: url('../../images/slider/slider3.jpeg');
+    background-position: 30% 30%;
+}
+
+#slider .carousel-control-next,
+#slider .carousel-control-prev {
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: fit-content;
+    height: fit-content;
+    background: #333;
+    opacity: .7;
+    padding: 16px 20px;
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+}
+
+#slider .carousel-control-next:hover,
+#slider .carousel-control-prev:hover {
+    background-color: var(--secondary-color);
+    opacity: 1;
+}
+
+#slider .carousel-control-next {
+    right: -10%;
+    transition-property: right, opacity;
+}
+
+#slider:hover .carousel-control-next {
+    right: 5%;
+}
+
+@media (max-width: 992px) {
+    #slider:hover .carousel-control-next {
+        right: 3%;
+    }
+}
+
+#slider .carousel-control-prev {
+    left: -10%;
+    transition-property: left, opacity;
+}
+
+#slider:hover .carousel-control-prev {
+    left: 5%;
+}
+
+@media (max-width: 992px) {
+    #slider:hover .carousel-control-prev {
+        left: 3%;
+    }
+}
+
+#slider article {
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    #slider article {
+        justify-content: center;
+    }
+}
+
+#slider .carousel-caption {
+    position: static;
+    max-width: 600px;
+}
+
+#slider .carousel-caption h2 {
+    font-size: 55px;
+    line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+    #slider .carousel-caption h2 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+}
+
+#slider .carousel-caption span {
+    background-color: var(--secondary-color);
+    padding: 3px 15px;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+/* End Slider */
+
+/* Start Services */
+
+#services {
+    padding: var(--section-padding);
+}
+
+#services i {
+    font-size: 18px;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#services h3 {
+    color: var(--primary-color);
+    margin: 20px 0 13px;
+    font-size: 23px;
+}
+
+#services p {
+    color: #8B999F;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* End Services */
+
+/* Start Company Overview */
+
+#company-overview {
+    background-color: var(--section-bg-color);
+    padding: var(--section-padding);
+}
+
+#company-overview p {
+    max-width: 691px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+/* End Company Overview */
+
+/* Start Featured Work */
+
+#featured-work {
+    padding: var(--section-padding);
+}
+
+#featured-work p {
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+#featured-work .nav-pills .nav-item:not(:last-of-type) .nav-link {
+    margin-right: 10px;
+}
+
+#featured-work .nav-pills .nav-item .nav-link {
+    color: var(--primary-color);
+    border: thin solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#featured-work .nav-pills .nav-item .nav-link.active {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+#featured-work figure {
+    position: relative;
+    cursor: pointer;
+}
+
+#featured-work figure figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--transition-duration);
+}
+
+#featured-work figure:hover figcaption {
+    opacity: 1;
+}
+
+#featured-work figure figcaption div {
+    border: 1px solid var(--secondary-color);
+    width: 80%;
+    height: 80%;
+    margin: 10% auto;
+}
+
+#featured-work figure figcaption span {
+    width: 100%;
+}
+
+#featured-work figure figcaption span:first-child {
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold);
+    font-size: 18px;
+}
+
+#featured-work figure figcaption span:last-child {
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+/* End Featured Work */
+
+/* Start Latest Post */
+
+#latest-post {
+    padding-bottom: 100px;
+}
+
+#latest-post p {
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+@media (max-width: 992px) {
+    #latest-post .card {
+        margin-top: 30px;
+    }
+}
+
+#latest-post .card-title {
+    margin-bottom: 0.75rem;
+}
+
+#latest-post .card-body time {
+    margin-bottom: 15px;
+    display: block;
+    color: #8B999F;
+}
+
+#latest-post p.card-text {
+    font-size: 14px;
+    color: #646770;
+}
+
+#latest-post .card-body a {
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    color: var(--secondary-color);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+#latest-post .card-body a i {
+    margin-left: 6px;
+    font-size: 16px;
+    transition: margin-left var(--transition-duration) ease-in-out;
+    -webkit-transition: margin-left var(--transition-duration) ease-in-out;
+    -moz-transition: margin-left var(--transition-duration) ease-in-out;
+    -ms-transition: margin-left var(--transition-duration) ease-in-out;
+    -o-transition: margin-left var(--transition-duration) ease-in-out;
+}
+
+#latest-post .card-body a:hover {
+    color: var(--primary-color);
+}
+
+#latest-post .card-body a:hover i {
+    margin-left: 10px;
+}
+
+
+/* End Latest Post */
+
+/* start Testimonials */
+
+#testimonials {
+    background: rgba(0 0 0 / 50%) url('../../images/testimonials/photo-1543269865-4430f94492b9.jfif');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#testimonials .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+#testimonials img {
+    width: 120px !important;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#testimonials .carousel-control-prev-icon,
+#testimonials .carousel-control-next-icon {
+    background-image: none;
+}
+
+#testimonials i.fas.fa-chevron-right,
+#testimonials i.fas.fa-chevron-left {
+    background: #333;
+    padding: 16px 20px;
+}
+
+#testimonials i.fas.fa-chevron-right:hover,
+#testimonials i.fas.fa-chevron-left:hover {
+    background-color: var(--secondary-color);
+}
+
+#testimonials .carousel-control-prev {
+    left: -15%;
+}
+
+#testimonials .carousel-control-next {
+    right: -10%;
+}
+
+#testimonials .carousel-control-prev,
+#testimonials .carousel-control-next {
+    opacity: 0 !important;
+    transition: all .5s !important;
+    -webkit-transition: all .5s !important;
+    -moz-transition: all .5s !important;
+    -ms-transition: all .5s !important;
+    -o-transition: all .5s !important;
+}
+
+#testimonials:hover .carousel-control-prev,
+#testimonials:hover .carousel-control-next {
+    opacity: 1 !important;
+}
+
+#testimonials .carousel-indicators li {
+    width: 38px;
+}
+
+#testimonials:hover .carousel-control-prev {
+    left: -5%;
+}
+
+#testimonials:hover .carousel-control-next {
+    right: 0%;
+}
+
+/* End Testimonials */
+
+/* Start Pricing Table */
+
+#pricing-table {
+    padding: var(--section-padding);
+    background-color: #f7f7f7;
+}
+
+#pricing-table p {
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    #pricing-table article:nth-of-type(2) {
+        top: -15px;
+    }
+}
+
+#pricing-table ul {
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: var(--white-color);
+    position: relative;
+    /* top: 0;  Try Without It */
+    top: 0;
+    cursor: pointer;
+    transition-property: top, box-shadow;
+    transition-duration: var(--transition-duration);
+}
+
+#pricing-table ul:hover {
+    box-shadow: 0px 0px 20px #ddd;
+    top: -15px;
+}
+
+#pricing-table article ul li:first-of-type {
+    font-size: 25px;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+#pricing-table article ul li:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+#pricing-table article ul li:nth-of-type(3) {
+    background-color: #f7f7f7;
+    padding: 25px 0;
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+#pricing-table article:nth-of-type(2) ul li:nth-of-type(3) {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+#pricing-table article ul li:nth-of-type(3) span {
+    font-size: 14px;
+}
+
+#pricing-table article ul li:nth-of-type(4),
+#pricing-table article ul li:nth-of-type(5),
+#pricing-table article ul li:nth-of-type(6),
+#pricing-table article ul li:nth-of-type(7),
+#pricing-table article ul li:nth-of-type(8) {
+    line-height: 2;
+    padding: 10px 0;
+}
+
+#pricing-table article ul li a {
+    margin-top: 1rem;
+}
+
+/* End Pricing Table */
+
+/* Start Why Choose Us */
+
+#why-choose-us {
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+#why-choose-us img {
+    height: 100%;
+}
+
+#why-choose-us article {
+    height: 100%;
+    color: var(--white-color);
+    padding: 10% 0 10% 50px;
+}
+
+#why-choose-us article a {
+    margin-top: 1rem;
+}
+
+/* End Why Choose Us */
+
+/* Start Statistics */
+
+#statistics {
+    padding: var(--section-padding);
+}
+
+#statistics i {
+    color: var(--primary-color);
+}
+
+#statistics span:first-of-type {
+    color: var(--primary-color);
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+#statistics span:last-of-type {
+    color: var(--secondary-color);
+}
+
+/* End Statistics */
+
+/* Start Contact Us */
+
+#contact-us {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: var(--section-padding);
+}
+
+#contact-us p {
+    margin-bottom: 0;
+    /** From Bootstrap */
+    font-size: 1.5rem;
+}
+
+#contact-us a {
+    border-color: var(--white-color);
+}
+
+/* End Contact Us */

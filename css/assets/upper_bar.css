@@ -1,0 +1,56 @@
+/* Start Upper Bar */
+
+#upper-bar {
+    background-color: var(--primary-color);
+    color: #ddd;
+    padding: 15px 0;
+}
+
+@media (max-width: 992px) {
+    #upper-bar {
+        font-size: 14px;
+    }
+}
+
+#upper-bar i {
+    margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+    #upper-bar i {
+        margin-right: 8px;
+    }
+}
+
+#upper-bar a {
+    color: #ddd;
+}
+
+#upper-bar i:last-of-type {
+    margin-left: 15px;
+}
+
+#upper-bar span + a {
+    border: thin solid var(--secondary-color);
+    padding: 2px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+}
+
+@media (max-width: 992px) {
+    #upper-bar span + a {
+        font-size: 12px;
+    }
+}
+
+#upper-bar .hvr-rectangle-out {
+    background-color: transparent;
+}
+
+#upper-bar .hvr-rectangle-out:before {
+    background-color: var(--secondary-color);
+}
+
+/* End Upper Bar */

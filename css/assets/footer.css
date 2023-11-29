@@ -1,0 +1,117 @@
+/* Start Footer */
+
+#footer {
+    padding: var(--section-padding);
+}
+
+#footer h2 {
+    color: var(--primary-color);
+}
+
+#footer h2 span {
+    color: var(--secondary-color);
+}
+
+#footer article p {
+    line-height: 1.7;
+    color: #555;
+}
+
+#footer article:first-of-type a {
+    transition-duration: var(--transition-duration);
+}
+
+#footer article i {
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+}
+
+#footer article:first-of-type a i {
+    /* transition-property: color,margin-left; */
+    transition-property: margin-left;
+    transition-duration: var(--transition-duration);
+}
+
+#footer article:first-of-type a:hover {
+    color: var(--secondary-color);
+}
+
+#footer article:first-of-type a:hover i {
+    margin-left: 5px;
+}
+
+#footer article:not(:last-of-type) a {
+    color: var(--primary-color);
+}
+
+#footer article:last-of-type {
+    color: var(--dark-color);
+}
+
+#footer article:last-of-type a {
+    color: #555;
+}
+
+/* NOTE: 
+
+
+*/
+
+#footer article:not(:first-of-type,:last-of-type) a {
+    transition-property: margin-left;
+    transition-duration: var(--transition-duration);
+}
+
+#footer article:not(:first-of-type,:last-of-type) a:hover {
+    margin-left: 10px;
+}
+
+/* End Footer */
+
+/* Start CopyRight */
+
+#copyright {
+    border-top: 1px solid #dde4e5;
+    padding: 40px 0;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#copyright p,
+#copyright ul {
+    margin-bottom: 0;
+}
+
+#copyright ul li:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+#copyright ul li a {
+    color: var(--dark-color);
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+}
+
+#copyright ul li:first-of-type:hover a {
+    color: #3b5998;
+}
+
+#copyright ul li:nth-of-type(2):hover a {
+    color: #14171a;
+}
+
+#copyright ul li:nth-of-type(3):hover a {
+    color: #c32361;
+}
+
+#copyright ul li:nth-of-type(4):hover a {
+    color: #4a154b;
+}
+
+#copyright ul li:last-of-type:hover a {
+    color: #db4437;
+}
+
+/* End CopyRight */

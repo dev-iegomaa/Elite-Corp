@@ -1,0 +1,11 @@
+/* Start Classes */
+
+.active {
+    opacity: 1 !important;
+}
+
+.show {
+    right: 0 !important;
+}
+
+/* End Classes */

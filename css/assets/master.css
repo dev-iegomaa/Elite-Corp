@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #08526d;
+    --secondary-color: #ec1c23;
+    --white-color: #fff;
+    --dark-color: #000;
+    --section-padding: 100px 0;
+    --section-bg-color: #F0F5F7;
+    --transition-duration: .5s;
+    --border-radius: .35rem;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+}
+
+img {
+    width: 100% !important;
+}
+
+p {
+    line-height: 1.7;
+}
+
+figure {
+    margin: 0;
+}
+
+::selection {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+
+#scroll-to-top {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    color: var(--white-color);
+    box-shadow: 0 0 20px 1px rgba(0 0 0 / 37%);
+    position: fixed;
+    bottom: -70px;
+    right: 25px;
+    transition-property: bottom;
+    transition-duration: var(--transition-duration);
+}
+
+#company-overview a,
+#pricing-table article ul li a,
+#contact-us a,
+#why-choose-us article a {
+    padding: 12px 35px;
+    font-size: 17px;
+    display: inline-block;
+    border: 2px solid;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+#company-overview a,
+#pricing-table article ul li a,
+#why-choose-us article a {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    transition-property: background-color, color, font-weight;
+    transition-duration: var(--transition-duration);
+}
+
+#setting {
+    height: 100vh;
+    background: #f7f7f7;
+    width: fit-content;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    z-index: 10;
+    top: 0;
+    transition-property: right;
+    transition-duration: var(--transition-duration);
+    right: -185px;
+}
+
+#setting span {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    padding: 18px;
+    display: block;
+    background-color: #f7f7f7;
+    left: -52px;
+    transform: translateY(-50%);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+#setting i {
+    /* delete it and watch the height will add. */
+    display: block;
+    color: var(--dark-color);
+}
+
+#setting ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 5px;
+}
+
+#setting ul li {
+    opacity: .5;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
